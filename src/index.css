@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face{
+    font-family: 'KoHo';
+    src: url('../fonts/KoHo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face{
+    font-family: 'KoHo';
+    src: url('../fonts/KoHo-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face{
+    font-family: 'Jetbrains Mono';
+    src: url('../fonts/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face{
+    font-family: 'Jetbrains Mono';
+    src: url('../fonts/JetBrainsMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+
+:root {
+	--bg-color: #A2BDC7;
+	--bg-dark-color: #678E9C;
+  --bg-menu-color: #373636;
+  --bg-selectmenu-color: #5A5A5A;
+
+	--text-color: #000;
+  --text-button-color: #fff;
+  --link-color: #226894;
+
+  --header-color: #416B79;
+  --section-color: #9CB5BE;
+
+  --font-Koho: 'KoHo';
+  --font-JetbrainsMono: 'Jetbrains Mono';
+}
+
+body{
+	background-color: var(--bg-color);
+}

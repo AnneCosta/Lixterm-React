@@ -1,0 +1,11 @@
+@import '../../index.css';
+
+.containerTerminal{
+	background-image: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	height: 100vh;
+}

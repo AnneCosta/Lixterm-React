@@ -1,0 +1,22 @@
+@import '../../index.css';
+
+.titleLogin{
+	font-family: var(--font-Koho);
+	font-weight: bold;
+}
+
+.buttonLogin{
+	background-color: #678E9C;
+	padding: 15px;
+	margin: 10px 0 10px 0;
+	color: #fff;
+	font-family: var(--font-JetbrainsMono);
+}
+
+.buttonLogin:hover{
+	background-color: #547480;
+}
+
+.fontJetbrains{
+	font-family: var(--font-JetbrainsMono);
+}

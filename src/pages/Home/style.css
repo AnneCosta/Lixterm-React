@@ -1,0 +1,40 @@
+@import '../../index.css';
+
+body{
+	height: 100vh;
+	text-align: center;
+}
+
+.containerHome{
+	background: url('../../../images/bgMenu.png') 
+							repeat 
+							fixed 
+							center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	height: 100vh;
+}
+
+.titleHome{
+	font-family: var(--font-Koho);
+	font-weight: bold;
+}
+
+.subtitleHome{
+	font-family: var(--font-JetbrainsMono);
+}
+
+.buttonHome{
+	background-color: #678E9C;
+	padding: 15px;
+	margin: 10px 0 10px 0;
+	color: #fff;
+	font-family: var(--font-JetbrainsMono);
+}
+
+.buttonHome:hover{
+	background-color: #547480;
+}
