@@ -47,7 +47,7 @@ export function Terminal() {
 		<main className='w-full'>
 			<section className='flex flex-row justify-between bg-[#678E9C] p-[15px] items-center '>
 				<section>
-					LixTerm
+					<strong>LixTerm</strong>
 				</section>
 				<section>
 					{ user ? <IsLogged /> : <IsNotLogged /> }

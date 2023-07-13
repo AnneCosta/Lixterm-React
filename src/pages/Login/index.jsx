@@ -13,7 +13,7 @@ export function Login() {
   }, [user]);
 
   return (
-    <main className="w-full h-screen">
+    <main className="w-full h-screen containerHome">
       <div className="h-screen w-80 m-auto flex flex-col justify-center items-center">
         <h1 className="text-3xl mb-5 titleLogin">Login</h1>
         <div className="w-full">

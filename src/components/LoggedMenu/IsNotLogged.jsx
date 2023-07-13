@@ -75,12 +75,11 @@ export default function IsNotLogged() {
               zIndex: 0,
             },
 						'& .MuiButtonBase-root:hover': {
-							bgcolor: '#A2BDC7',
-							color: '#000'
+							bgcolor: '#6d8f9c',
 						},
-            '& .MuiListItemIcon-root:hover': {
-              color: '#A2BDC7'
-            }
+            '& .MuiListItemIcon-root': {
+              color: '#fff'
+            },
           },
         }}
         transformOrigin={{ horizontal: 'right', vertical: 'top' }}
@@ -88,7 +87,7 @@ export default function IsNotLogged() {
       >
         <MenuItem sx={{ fontFamily: 'KoHo', fontWeight: 'bold' }} onClick={() => { navigate('/login') }}>
 					<ListItemIcon>
-						<FaGoogle style={{ color: '#fff' }} /> 
+						<FaGoogle /> 
 					</ListItemIcon>
 					Faça login
         </MenuItem>

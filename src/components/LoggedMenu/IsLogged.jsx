@@ -83,6 +83,12 @@ export default function IsLogged() {
               transform: 'translateY(-50%) rotate(45deg)',
               zIndex: 0,
             },
+						'& .MuiButtonBase-root:hover': {
+							bgcolor: '#6d8f9c',
+						},
+            '& .MuiListItemIcon-root': {
+              color: '#fff'
+            },
           },
         }}
         transformOrigin={{ horizontal: 'right', vertical: 'top' }}
