@@ -13,7 +13,7 @@ import {
 } from "firebase/firestore"
 
 const firebaseConfig = {
-  apiKey: import.meta.env.API_KEY,
+  apiKey: import.meta.env.VITE_API_KEY,
   authDomain: import.meta.env.VITE_AUTH_DOMAIN,
   databaseURL: import.meta.env.VITE_DATABASE_URL,
   projectId: "lixterm-c4c8f",
