@@ -10,7 +10,7 @@ export function Home() {
 			</section>
 			<section className='flex flex-col max-xl:w-1/4 lg:w-1/4 md:w-1/3 w-full'>
 				<a className='buttonHome text-lg rounded-lg lg:rounded-xl md:rounded-xl' href="/terminal">Acessar terminal</a>
-				<a className='buttonHome text-lg lg:rounded-xl md:rounded-xl' href="/login">Fazer login</a>
+				<a className='buttonHome text-lg rounded-lg lg:rounded-xl md:rounded-xl' href="/login">Fazer login</a>
 			</section>
 		</main>
 	)
