@@ -5,7 +5,9 @@ import {
 	auth, 
 	getDocs, 
 	userCollectionRef, 
-	addDoc 
+	setDoc,
+	doc,
+	db
 } from '../../services/firebase'
 import Carousel from '../../components/Carousel'
 import CmdComp from '../../components/CmdComp'
@@ -20,19 +22,24 @@ export function Terminal() {
 	const dataFetchedRef = useRef(false);
 
 	const handleUser = async () => {
-		const data = await getDocs(userCollectionRef)
-		const userInfo = data.docs.map((doc) => ({ ...doc.data(), id:doc.id }))
-		const infoUserDb = userInfo.map((info) => ({ email: info.email }))
-		const found = infoUserDb.some(el => el.email === user.email )
+		try{
+			const data = await getDocs(userCollectionRef)
+			const userInfo = data.docs.map((doc) => ({ ...doc.data(), id:doc.id }))
+			const infoUserDb = userInfo.map((info) => ({ email: info.email }))
+			const found = infoUserDb.some(el => el.email === user.email )
 
-		if(!found) {
-			await addDoc(userCollectionRef, {
-				uid: user.uid,
-				name: user.displayName,
-				email: user.email
-			})
-			
-		} else { return; }
+			if(!found) {
+				await setDoc(doc(userCollectionRef, user.uid), {
+					name: user.displayName,
+					email: user.email
+				});
+				
+			} else { return; }
+
+		} catch (error){
+			console.error(error)
+		}
+
 	}
 
 	useEffect(() => {

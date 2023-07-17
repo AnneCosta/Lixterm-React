@@ -9,7 +9,8 @@ import {
   getFirestore, 
   getDocs,
   collection,
-  addDoc
+  setDoc,
+  doc
 } from "firebase/firestore"
 
 const firebaseConfig = {
@@ -49,5 +50,6 @@ export {
   getDocs,
   userCollectionRef,
   commandCollectionRef,
-  addDoc
+  setDoc,
+  doc
 }
