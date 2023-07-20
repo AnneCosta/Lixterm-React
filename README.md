@@ -22,4 +22,4 @@
   - sudo (Básico)
   - help (Para listar os comandos disponíveis)
 
-**[Faça uma visita](https://lixterm-react.vercel.app/)** e teste a ferramenta! Todo feedback é muito bem vindo. ❤️
+**[Faça uma visita](https://lixterm.vercel.app/)** e teste a ferramenta! Todo feedback é muito bem vindo. ❤️
